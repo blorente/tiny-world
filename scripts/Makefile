@@ -3,10 +3,10 @@ SHELL := /bin/bash
 outdir = _out
 md_out = $(outdir)/processed_md
 html_out = $(outdir)/html
-content_root = content
-concept_map = example_map.yaml
+content_root = tiny-world
+concept_map = "$(content_root)/concept_map.yaml"
 
-all: $(md_out)/index.html $(html_out)
+all: $(html_out)/index.html
 clean:
 	rm -r $(outdir)
 
